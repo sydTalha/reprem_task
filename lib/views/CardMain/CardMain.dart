@@ -4,6 +4,7 @@ import 'package:reprem_task/controllers/CardMainController/CardMainController.da
 import 'package:reprem_task/views/CardDetail/CardDetail.dart';
 import 'package:reprem_task/views/CardMain/Row/ListRow.dart';
 import 'package:reprem_task/views/common/TopRowIcons.dart';
+import 'package:simple_shadow/simple_shadow.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import 'Pages/CardPage.dart';
@@ -65,6 +66,7 @@ class _CardMainState extends State<CardMain> {
                 width: size.width,
 
                 decoration: BoxDecoration(
+                  color: Color.fromRGBO(189, 189, 223, 1),
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(24),
                       topRight: Radius.circular(24),
@@ -196,6 +198,7 @@ class _CardMainState extends State<CardMain> {
                   width: size.width,
 
                   decoration: BoxDecoration(
+                    // color: Colors.white,
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(24),
                         topRight: Radius.circular(24),

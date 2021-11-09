@@ -27,7 +27,11 @@ class CardDetail extends StatelessWidget {
   Container mobileView(Size size) {
     final controller = PageController(viewportFraction: 1, keepPage: true);
 
-    final pages = List.generate(2, (index) => ListRow(isTabView: false,));
+    final pages = List.generate(
+        2,
+        (index) => ListRow(
+              isTabView: false,
+            ));
     return Container(
       child: Stack(
         alignment: Alignment.center,
@@ -43,7 +47,6 @@ class CardDetail extends StatelessWidget {
               child: PageView.builder(
                 controller: controller,
                 scrollDirection: Axis.horizontal,
-
                 itemBuilder: (_, index) {
                   return pages[index % pages.length];
                 },
@@ -62,9 +65,37 @@ class CardDetail extends StatelessWidget {
                       dotWidth: 6,
                       expansionFactor: 3.5,
                     ),
-                    onDotClicked: (index) {})
-            ),
+                    onDotClicked: (index) {})),
           ),
+          Positioned(
+              bottom: size.height * 0.35,
+              child: Container(
+                height: size.height * 0.12,
+                width: size.width * 0.95,
+                decoration: BoxDecoration(
+                  // color: Colors.black,
+                  image: DecorationImage(
+                    image: AssetImage("assets/icons/tabbarbg.png"),
+                    
+                    fit: BoxFit.fitHeight,
+                  ),
+                  // borderRadius: BorderRadius.only(
+                  //     topLeft: Radius.circular(24),
+                  //     topRight: Radius.circular(24),
+                  //     bottomLeft: Radius.circular(24),
+                  //     bottomRight: Radius.circular(24)),
+                  // boxShadow: [
+                  //   BoxShadow(
+                  //     //color: Color.fromRGBO(176, 184, 218, 1).withOpacity(0.17),
+                  //     color:
+                  //         Color.fromRGBO(240, 240, 230, 0.5).withOpacity(0.5),
+                  //     blurRadius: 10,
+                  //     offset: Offset(0, 8), // changes position of shadow
+                  //   ),
+                  // ],
+                ),
+              ),
+              ),
           Positioned(
             bottom: size.height * 0.38,
             left: 12,
@@ -87,7 +118,7 @@ class CardDetail extends StatelessWidget {
                       child: ButtonsTabBar(
                         height: 50,
                         contentPadding: EdgeInsets.all(10),
-                        backgroundColor: Colors.white,
+                        backgroundColor: Color.fromRGBO(248, 250, 248, 1),
                         unselectedBackgroundColor: Colors.transparent,
                         labelStyle: TextStyle(
                             color: Color.fromRGBO(113, 119, 181, 1),
@@ -149,7 +180,6 @@ class CardDetail extends StatelessWidget {
               ),
             ),
           ),
-
           Positioned(
             bottom: size.height * 0.25,
             left: size.height * 0.04,
@@ -187,8 +217,7 @@ class CardDetail extends StatelessWidget {
                 boxShadow: [
                   BoxShadow(
                     //color: Color.fromRGBO(176, 184, 218, 1).withOpacity(0.17),
-                    color:
-                    Color.fromRGBO(240, 240, 230, 0.5).withOpacity(0.5),
+                    color: Color.fromRGBO(240, 240, 230, 0.5).withOpacity(0.5),
                     blurRadius: 10,
                     offset: Offset(0, 8), // changes position of shadow
                   ),
@@ -220,12 +249,10 @@ class CardDetail extends StatelessWidget {
                       ),
                     ),
                   ),
-
                 ],
               ),
             ),
           ),
-
           Positioned(
             bottom: size.height * 0.11,
             left: size.height * 0.04,
@@ -245,7 +272,6 @@ class CardDetail extends StatelessWidget {
               ),
             ),
           ),
-
           Positioned(
             bottom: size.height * 0.11,
             left: size.width * 0.28,
@@ -263,8 +289,7 @@ class CardDetail extends StatelessWidget {
                 boxShadow: [
                   BoxShadow(
                     //color: Color.fromRGBO(176, 184, 218, 1).withOpacity(0.17),
-                    color:
-                    Color.fromRGBO(240, 240, 230, 0.5).withOpacity(0.5),
+                    color: Color.fromRGBO(240, 240, 230, 0.5).withOpacity(0.5),
                     blurRadius: 10,
                     offset: Offset(0, 8), // changes position of shadow
                   ),
@@ -294,10 +319,13 @@ class CardDetail extends StatelessWidget {
   }
 
   Container tabletView(Size size) {
-
     final controller = PageController(viewportFraction: 1, keepPage: true);
 
-    final pages = List.generate(2, (index) => ListRow(isTabView: true,));
+    final pages = List.generate(
+        2,
+        (index) => ListRow(
+              isTabView: true,
+            ));
     return Container(
       child: Stack(
         alignment: Alignment.center,
@@ -334,8 +362,7 @@ class CardDetail extends StatelessWidget {
                       dotWidth: 10,
                       expansionFactor: 3.5,
                     ),
-                    onDotClicked: (index) {})
-            ),
+                    onDotClicked: (index) {})),
           ),
           Positioned(
             bottom: size.height * 0.38,
@@ -421,7 +448,6 @@ class CardDetail extends StatelessWidget {
               ),
             ),
           ),
-
           Positioned(
             bottom: size.height * 0.25,
             left: size.height * 0.04,
@@ -459,8 +485,7 @@ class CardDetail extends StatelessWidget {
                 boxShadow: [
                   BoxShadow(
                     //color: Color.fromRGBO(176, 184, 218, 1).withOpacity(0.17),
-                    color:
-                    Color.fromRGBO(240, 240, 230, 0.5).withOpacity(0.5),
+                    color: Color.fromRGBO(240, 240, 230, 0.5).withOpacity(0.5),
                     blurRadius: 10,
                     offset: Offset(0, 8), // changes position of shadow
                   ),
@@ -492,12 +517,10 @@ class CardDetail extends StatelessWidget {
                       ),
                     ),
                   ),
-
                 ],
               ),
             ),
           ),
-
           Positioned(
             bottom: size.height * 0.11,
             left: size.height * 0.04,
@@ -517,7 +540,6 @@ class CardDetail extends StatelessWidget {
               ),
             ),
           ),
-
           Positioned(
             bottom: size.height * 0.11,
             left: size.width * 0.28,
@@ -535,8 +557,7 @@ class CardDetail extends StatelessWidget {
                 boxShadow: [
                   BoxShadow(
                     //color: Color.fromRGBO(176, 184, 218, 1).withOpacity(0.17),
-                    color:
-                    Color.fromRGBO(240, 240, 230, 0.5).withOpacity(0.5),
+                    color: Color.fromRGBO(240, 240, 230, 0.5).withOpacity(0.5),
                     blurRadius: 10,
                     offset: Offset(0, 8), // changes position of shadow
                   ),

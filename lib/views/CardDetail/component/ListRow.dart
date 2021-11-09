@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:reprem_task/utils/Constants.dart';
 import 'package:reprem_task/utils/UI/ResponsiveWidget.dart';
 
 class ListRow extends StatelessWidget {
@@ -45,14 +46,15 @@ class ListRow extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Container(
-            width: size.height * 0.13,
-            height: size.height * 0.1,
+            width: size.height * 0.12,
+            height: size.height * 0.13,
             //margin: EdgeInsets.only(top: 12),
             child: Stack(
               children: [
                 Positioned(
                   child: Center(
                     child: Container(
+                      margin: EdgeInsets.only(top: size.width * 0.02),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular((size.height * 0.1)/2),
                         child: Image.asset('assets/icons/user.png', width: size.height * 0.1, height: size.height * 0.1, fit: BoxFit.cover,),
@@ -63,43 +65,64 @@ class ListRow extends StatelessWidget {
 
                 Positioned(
                   bottom: 1,
-                  right: -1,
+                  right: -0.5,
                   child: Container(
                     width: size.height * 0.045,
                     height: size.height * 0.045,
-                    child: Image.asset('assets/icons/cardiconbg.png'),
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image : AssetImage('assets/icons/cardiconbg.png'),
+                        fit: BoxFit.none,
+                        ),
+                        borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(24),
+                            topRight: Radius.circular(24),
+                            bottomLeft: Radius.circular(24),
+                            bottomRight: Radius.circular(24)),
+                    ),
+                    child: Text(
+                      "Zoopla",
+                        style: TextStyle(
+                        color: Color.fromRGBO(54, 68, 119, 100),
+                        fontSize: size.height * 0.012
+                        ),
+                    ),
                   ),
                 )
               ],
             ),
           ),
+
           Spacer(),
-          Text(
-            "John Castle",
-            style: TextStyle(
-                color: Color.fromRGBO(77, 85, 119, 1),
-                fontWeight: FontWeight.w600,
-                fontSize: size.height * 0.027
+
+          Container(
+            child: Text(
+              "John Castle",
+              style: TextStyle(
+                  color: Color.fromRGBO(54, 68, 119, 100),
+                  fontWeight: FontWeight.w600,
+                  fontSize: size.height * 0.027
+              ),
             ),
           ),
           Spacer(),
           Text(
             "Regional Sales Manager at Zoopla",
             style: TextStyle(
-                color: Color.fromRGBO(138, 142, 163, 1),
+                color: Color.fromRGBO(138, 142, 163, 100),
                 fontWeight: FontWeight.w400,
-                fontSize: size.height * 0.024
+                fontSize: size.height * 0.022
             ),
           ),
           Spacer(),
           Container(
-            margin: EdgeInsets.only(bottom: size.height * 0.03),
+            margin: EdgeInsets.only(bottom: size.height * 0.001),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  width: size.height * 0.12,
-                  height: size.height * 0.12,
+                  width: size.height * 0.11,
+                  height: size.height * 0.11,
                   decoration: BoxDecoration(
                       image: DecorationImage(
                           image: AssetImage(
@@ -114,8 +137,8 @@ class ListRow extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  width: size.height * 0.12,
-                  height: size.height * 0.12,
+                  width: size.height * 0.11,
+                  height: size.height * 0.11,
                   decoration: BoxDecoration(
                       image: DecorationImage(
                           image: AssetImage(
@@ -130,8 +153,8 @@ class ListRow extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  width: size.height * 0.12,
-                  height: size.height * 0.12,
+                  width: size.height * 0.11,
+                  height: size.height * 0.11,
                   decoration: BoxDecoration(
                       image: DecorationImage(
                           image: AssetImage(

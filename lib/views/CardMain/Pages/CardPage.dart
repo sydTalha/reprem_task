@@ -1,4 +1,6 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:simple_shadow/simple_shadow.dart';
 
 class CardPage extends StatelessWidget {
   const CardPage({Key? key}) : super(key: key);
@@ -13,7 +15,8 @@ class CardPage extends StatelessWidget {
       width: size.width,
 
       decoration: BoxDecoration(
-        color: Color.fromRGBO(189, 189, 223, 0.2),
+        color: Colors.white,
+          //color: Color.fromRGBO(189, 189, 223, 0.2),
         image: DecorationImage(
           image: AssetImage("assets/icons/card bg.png"),
           fit: BoxFit.cover,
@@ -25,6 +28,7 @@ class CardPage extends StatelessWidget {
             bottomLeft: Radius.circular(24),
             bottomRight: Radius.circular(24)
         ),
+
 
       ),
 

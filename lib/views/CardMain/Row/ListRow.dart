@@ -25,7 +25,7 @@ class ListRow extends StatelessWidget {
     return Container(
       width: 280 * size.aspectRatio,
       height: size.height * 0.30,
-      margin: EdgeInsets.only(left: 5, right: 8, bottom: 8, top: 8),
+      margin: EdgeInsets.only(left: 5, right: 8, bottom: 14, top: 8),
       decoration: BoxDecoration(
         color: Color.fromRGBO(248, 250, 248, 1),
         borderRadius: BorderRadius.only(
@@ -34,6 +34,17 @@ class ListRow extends StatelessWidget {
             bottomLeft: Radius.circular(24),
             bottomRight: Radius.circular(24)
         ),
+
+        boxShadow: [
+          BoxShadow(
+            color: Color.fromRGBO(131, 143, 197, 0.5)
+                .withOpacity(0.13),
+
+            blurRadius: 6,
+            offset:
+            Offset(6, 6), // changes position of shadow
+          ),
+        ],
 
       ),
       child: Column(
@@ -99,6 +110,17 @@ class ListRow extends StatelessWidget {
             bottomLeft: Radius.circular(24),
             bottomRight: Radius.circular(24)
         ),
+
+        boxShadow: [
+          BoxShadow(
+            color: Color.fromRGBO(131, 143, 197, 0.7)
+                .withOpacity(0.15),
+
+            blurRadius: 11,
+            offset:
+            Offset(6, 6), // changes position of shadow
+          ),
+        ],
 
       ),
       child: Column(

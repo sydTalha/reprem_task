@@ -64,9 +64,8 @@ class _CardMainState extends State<CardMain> {
               child: Container(
                 height: size.height * 0.45 * size.aspectRatio,
                 width: size.width,
-
+                //margin: EdgeInsets.only(left: size.width * 0.02, right: size.width * 0.02),
                 decoration: BoxDecoration(
-                  color: Color.fromRGBO(189, 189, 223, 1),
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(24),
                       topRight: Radius.circular(24),
@@ -76,12 +75,12 @@ class _CardMainState extends State<CardMain> {
 
                   boxShadow: [
                     BoxShadow(
-                      color: Color.fromRGBO(131, 143, 197, 0.5)
-                          .withOpacity(0.3)
-                          .withBlue(100),
-                      blurRadius: 35,
+                      color: Color.fromRGBO(131, 143, 197, 0.01)
+                          .withOpacity(0.1),
+                      // .withBlue(100),
+                      blurRadius: 7,
                       offset:
-                      Offset(0, 6),
+                      Offset(5,9), // changes position of shadow
                     ),
                   ],
                 ),
@@ -143,16 +142,16 @@ class _CardMainState extends State<CardMain> {
                             bottomLeft: Radius.circular(24),
                             bottomRight: Radius.circular(24)
                         ),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Color.fromRGBO(131, 143, 197, 1)
-                                .withOpacity(0.3)
-                                .withBlue(150),
-                            blurRadius: 45,
-                            offset:
-                            Offset(0, 20), // changes position of shadow
-                          ),
-                        ],
+                        // boxShadow: [
+                        //   BoxShadow(
+                        //     color: Color.fromRGBO(131, 143, 197, 1)
+                        //         .withOpacity(0.3)
+                        //         .withBlue(150),
+                        //     blurRadius: 45,
+                        //     offset:
+                        //     Offset(0, 20), // changes position of shadow
+                        //   ),
+                        // ],
                       ),
 
                       margin: EdgeInsets.only(top: 15 * size.aspectRatio),
@@ -198,7 +197,7 @@ class _CardMainState extends State<CardMain> {
                   width: size.width,
 
                   decoration: BoxDecoration(
-                    // color: Colors.white,
+
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(24),
                         topRight: Radius.circular(24),
@@ -206,14 +205,15 @@ class _CardMainState extends State<CardMain> {
                         bottomRight: Radius.circular(24)
                     ),
 
+                  //
                     boxShadow: [
                       BoxShadow(
-                        color: Color.fromRGBO(131, 143, 197, 0.5)
-                            .withOpacity(0.3)
-                            .withBlue(100),
-                        blurRadius: 35,
+                        color: Color.fromRGBO(131, 143, 197, 0.01)
+                            .withOpacity(0.15),
+                            // .withBlue(100),
+                        blurRadius: 8,
                         offset:
-                        Offset(0, 6), // changes position of shadow
+                        Offset(9,10), // changes position of shadow
                       ),
                     ],
                   ),
@@ -275,16 +275,16 @@ class _CardMainState extends State<CardMain> {
                             bottomLeft: Radius.circular(24),
                             bottomRight: Radius.circular(24)
                         ),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Color.fromRGBO(131, 143, 197, 1)
-                                .withOpacity(0.3)
-                                .withBlue(150),
-                            blurRadius: 45,
-                            offset:
-                            Offset(0, 20), // changes position of shadow
-                          ),
-                        ],
+                        // boxShadow: [
+                        //   BoxShadow(
+                        //     color: Color.fromRGBO(131, 143, 197, 1)
+                        //         .withOpacity(0.3)
+                        //         .withBlue(150),
+                        //     blurRadius: 45,
+                        //     offset:
+                        //     Offset(0, 20), // changes position of shadow
+                        //   ),
+                        // ],
                       ),
 
                       margin: EdgeInsets.only(top: 15 * size.aspectRatio),

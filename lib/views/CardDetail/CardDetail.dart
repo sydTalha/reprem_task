@@ -127,6 +127,7 @@ class CardDetail extends StatelessWidget {
                             color: Color.fromRGBO(194, 194, 205, 1),
                             fontWeight: FontWeight.bold),
                         radius: 100,
+
                         tabs: [
                           Tab(
                             text: " " +

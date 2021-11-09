@@ -34,12 +34,12 @@ class CardDetail extends StatelessWidget {
         children: [
           TopRowIcons(isMain: false),
           Positioned(
-            top: size.width * 0.18,
+            top: size.width * 0.2,
             left: size.width * 0.02,
             right: size.width * 0.02,
             child: Container(
               width: size.width,
-              height: size.height * 0.55 * size.aspectRatio,
+              height: size.height * 0.65 * size.aspectRatio,
               child: PageView.builder(
                 controller: controller,
                 scrollDirection: Axis.horizontal,
@@ -51,7 +51,7 @@ class CardDetail extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(bottom: size.height * 0.07),
+            padding: EdgeInsets.only(bottom: size.height * 0.05),
             child: Center(
                 child: SmoothPageIndicator(
                     controller: controller, // PageController
@@ -325,16 +325,16 @@ class CardDetail extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(top: size.height * 0.05),
             child: Center(
-              child: SmoothPageIndicator(
-                controller: controller, // PageController
-                count: pages.length,
-                effect: ExpandingDotsEffect(
-                  activeDotColor: Color.fromRGBO(113, 119, 181, 1),
-                  dotHeight: 10,
-                  dotWidth: 10,
-                  expansionFactor: 3.5,
-                ),
-                  onDotClicked: (index) {})
+                child: SmoothPageIndicator(
+                    controller: controller, // PageController
+                    count: pages.length,
+                    effect: ExpandingDotsEffect(
+                      activeDotColor: Color.fromRGBO(113, 119, 181, 1),
+                      dotHeight: 10,
+                      dotWidth: 10,
+                      expansionFactor: 3.5,
+                    ),
+                    onDotClicked: (index) {})
             ),
           ),
           Positioned(

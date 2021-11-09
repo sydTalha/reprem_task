@@ -12,9 +12,9 @@ class TopRowIcons extends StatelessWidget {
     var size = MediaQuery.of(context).size;
 
     return Positioned(
-      top: 1,
-      left: 12,
-      right: 20,
+      top: size.width * 0.03,
+      left: size.width * 0.05,
+      right: size.width * 0.05,
       child: Container(
         width: size.width,
         child: Row(
@@ -33,10 +33,14 @@ class TopRowIcons extends StatelessWidget {
                 height: size.width * 0.08,
               ),
             ),
-            Container(
-              margin: EdgeInsets.only(left:size.width * 0.08),
-              child: Text(
-                this.isMain ? "Your E-Card" : "Card Details",
+            this.isMain ? Container(
+              margin: EdgeInsets.only(left:size.width * 0.009 , top: size.width * 0.01),
+              child: Text( "Your E-Card",
+                style: TextStyle(color: Color.fromRGBO(77, 85, 119, 1), fontSize: size.width*0.05, fontWeight: FontWeight.w600),
+              ),
+            ) : Container(
+              margin: EdgeInsets.only(left:size.width * 0.11),
+              child: Text( "Card Details" ,
                 style: TextStyle(color: Color.fromRGBO(77, 85, 119, 1), fontSize: size.width*0.05, fontWeight: FontWeight.w600),
               ),
             ),
@@ -47,15 +51,15 @@ class TopRowIcons extends StatelessWidget {
                 width: size.width * 0.083,
                 height: size.width * 0.083,
               )
-              : Row(
+                  : Row(
                 children: [
                   Container(
-                    margin: EdgeInsets.only(right: size.width * 0.03),
-                    child: Image.asset(
-                      'assets/icons/share.png',
-                      width: size.width * 0.083,
-                      height: size.width * 0.083,
-                    )
+                      margin: EdgeInsets.only(right: size.width * 0.03),
+                      child: Image.asset(
+                        'assets/icons/share.png',
+                        width: size.width * 0.083,
+                        height: size.width * 0.083,
+                      )
                   ),
                   if (!this.isMain) Text(
                     "Edit",

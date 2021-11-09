@@ -43,7 +43,7 @@ class CardDetail extends StatelessWidget {
             right: size.width * 0.02,
             child: Container(
               width: size.width,
-              height: size.height * 0.65 * size.aspectRatio,
+              height: size.height * 0.66 * size.aspectRatio,
               child: PageView.builder(
                 controller: controller,
                 scrollDirection: Axis.horizontal,
@@ -54,7 +54,7 @@ class CardDetail extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(bottom: size.height * 0.05),
+            padding: EdgeInsets.only(bottom: size.height * 0.07),
             child: Center(
                 child: SmoothPageIndicator(
                     controller: controller, // PageController
@@ -68,9 +68,9 @@ class CardDetail extends StatelessWidget {
                     onDotClicked: (index) {})),
           ),
           Positioned(
-              bottom: size.height * 0.35,
+              bottom: size.height * 0.38,
               child: Container(
-                height: size.height * 0.12,
+                height: size.height * 0.10,
                 width: size.width * 0.95,
                 decoration: BoxDecoration(
                   // color: Colors.black,
@@ -97,7 +97,7 @@ class CardDetail extends StatelessWidget {
               ),
               ),
           Positioned(
-            bottom: size.height * 0.38,
+            bottom: size.height * 0.40,
             left: 12,
             right: 12,
             child: Container(
@@ -181,8 +181,8 @@ class CardDetail extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: size.height * 0.25,
-            left: size.height * 0.04,
+            bottom: size.height * 0.27,
+            left: size.height * 0.03,
             child: Container(
               width: size.height * 0.08,
               height: size.height * 0.08,
@@ -200,8 +200,8 @@ class CardDetail extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: size.height * 0.23,
-            left: size.width * 0.28,
+            bottom: size.height * 0.26,
+            left: size.width * 0.25,
             right: size.width * 0.054,
             child: Container(
               //margin: EdgeInsets.only(left: 20, right: 20),
@@ -230,7 +230,7 @@ class CardDetail extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(left: 4, top: 3, bottom: 3),
+                    padding: EdgeInsets.only(left: 8, top: 3, bottom: 3),
                     child: Text(
                       "+44 3577 695 711",
                       style: TextStyle(
@@ -240,7 +240,7 @@ class CardDetail extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(left: 4, top: 2, bottom: 3),
+                    padding: EdgeInsets.only(left: 8, top: 2, bottom: 3),
                     child: Text(
                       "+44 8741 123 586",
                       style: TextStyle(
@@ -254,8 +254,8 @@ class CardDetail extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: size.height * 0.11,
-            left: size.height * 0.04,
+            bottom: size.height * 0.16,
+            left: size.height * 0.03,
             child: Container(
               width: size.height * 0.08,
               height: size.height * 0.08,
@@ -273,8 +273,8 @@ class CardDetail extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: size.height * 0.11,
-            left: size.width * 0.28,
+            bottom: size.height * 0.17,
+            left: size.width * 0.25,
             right: size.width * 0.054,
             child: Container(
               height: size.height * 0.07,
@@ -282,10 +282,10 @@ class CardDetail extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(20),
-                    topRight: Radius.circular(20),
-                    bottomLeft: Radius.circular(20),
-                    bottomRight: Radius.circular(20)),
+                    topLeft: Radius.circular(25),
+                    topRight: Radius.circular(25),
+                    bottomLeft: Radius.circular(25),
+                    bottomRight: Radius.circular(25)),
                 boxShadow: [
                   BoxShadow(
                     //color: Color.fromRGBO(176, 184, 218, 1).withOpacity(0.17),

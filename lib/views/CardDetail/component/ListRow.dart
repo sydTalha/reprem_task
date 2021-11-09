@@ -84,7 +84,7 @@ class ListRow extends StatelessWidget {
               style: TextStyle(
                   color: Color.fromRGBO(77, 85, 119, 1),
                   fontWeight: FontWeight.w600,
-                  fontSize: size.height * 0.027
+                  fontSize: size.height * 0.026
               ),
             ),
           ),
@@ -94,7 +94,7 @@ class ListRow extends StatelessWidget {
             style: TextStyle(
                 color: Color.fromRGBO(138, 142, 163, 1),
                 fontWeight: FontWeight.w400,
-                fontSize: size.height * 0.022
+                fontSize: size.height * 0.020
             ),
           ),
           Spacer(),

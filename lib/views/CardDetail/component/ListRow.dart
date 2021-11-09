@@ -67,26 +67,9 @@ class ListRow extends StatelessWidget {
                   bottom: 1,
                   right: -0.5,
                   child: Container(
-                    width: size.height * 0.045,
-                    height: size.height * 0.045,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image : AssetImage('assets/icons/cardiconbg.png'),
-                        fit: BoxFit.none,
-                        ),
-                        borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(24),
-                            topRight: Radius.circular(24),
-                            bottomLeft: Radius.circular(24),
-                            bottomRight: Radius.circular(24)),
-                    ),
-                    child: Text(
-                      "Zoopla",
-                        style: TextStyle(
-                        color: Color.fromRGBO(54, 68, 119, 100),
-                        fontSize: size.height * 0.012
-                        ),
-                    ),
+                    width: size.height * 0.046,
+                    height: size.height * 0.046,
+                    child: Image.asset('assets/icons/circle_zoopla.png'),
                   ),
                 )
               ],
@@ -99,7 +82,7 @@ class ListRow extends StatelessWidget {
             child: Text(
               "John Castle",
               style: TextStyle(
-                  color: Color.fromRGBO(54, 68, 119, 100),
+                  color: Color.fromRGBO(77, 85, 119, 1),
                   fontWeight: FontWeight.w600,
                   fontSize: size.height * 0.027
               ),
@@ -109,7 +92,7 @@ class ListRow extends StatelessWidget {
           Text(
             "Regional Sales Manager at Zoopla",
             style: TextStyle(
-                color: Color.fromRGBO(138, 142, 163, 100),
+                color: Color.fromRGBO(138, 142, 163, 1),
                 fontWeight: FontWeight.w400,
                 fontSize: size.height * 0.022
             ),

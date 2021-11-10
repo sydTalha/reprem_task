@@ -36,32 +36,27 @@ class CardPage extends StatelessWidget {
         children: [
           Spacer(),
           ClipRRect(
-            borderRadius: BorderRadius.circular((size.height * 0.1)/2),
-            child: Image.asset('assets/icons/user.png', width: size.height * 0.1, height: size.height * 0.1, fit: BoxFit.cover,),
+            borderRadius: BorderRadius.circular((size.height * 0.13)/2),
+            child: Image.asset('assets/icons/user.png', width: size.height * 0.13, height: size.height * 0.13, fit: BoxFit.cover,),
           ),
           Spacer(),
-          Expanded(
-              flex: 2,
-              child: Text(
+          Text(
                 "John Castle",
                 style: TextStyle(
                     color: Color.fromRGBO(77, 85, 119, 1),
                     fontWeight: FontWeight.w600,
                     fontSize: size.height * 0.027
                 ),
-              )
-          ),
-          Expanded(
-              flex: 1,
-              child: Text(
+              ),
+         SizedBox(height: size.width * 0.05),
+         Text(
                 "Regional Sales Manager at Zoopla",
                 style: TextStyle(
                     color: Color.fromRGBO(138, 142, 163, 1),
                     fontWeight: FontWeight.w400,
                     fontSize: size.height * 0.024
                 ),
-              )
-          ),
+              ),
           Spacer()
 
         ],

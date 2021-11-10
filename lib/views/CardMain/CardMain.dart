@@ -99,7 +99,7 @@ class _CardMainState extends State<CardMain> {
 
           Positioned(
               child: Padding(
-                padding: EdgeInsets.only(bottom: size.height * 0.0),
+                padding: EdgeInsets.only(top: size.height * 0.06),
                 child: Center(
                   child: SmoothPageIndicator(
                       controller: pageController, // PageController
@@ -203,8 +203,6 @@ class _CardMainState extends State<CardMain> {
                         bottomLeft: Radius.circular(30),
                         bottomRight: Radius.circular(30)
                     ),
-
-                  //
                     boxShadow: [
                       BoxShadow(
                         color: Color.fromRGBO(131, 143, 197, 0.01)

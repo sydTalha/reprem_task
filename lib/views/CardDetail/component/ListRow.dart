@@ -150,20 +150,13 @@ class ListRow extends StatelessWidget {
       decoration: BoxDecoration(
         image: DecorationImage(
           image: AssetImage("assets/icons/card bg.png"),
-          fit: BoxFit.none,
+          fit: BoxFit.cover,
         ),
         borderRadius: BorderRadius.only(
             topLeft: Radius.circular(24),
             topRight: Radius.circular(24),
             bottomLeft: Radius.circular(24),
             bottomRight: Radius.circular(24)),
-        // boxShadow: [
-        //   BoxShadow(
-        //     color: Color.fromRGBO(240, 240, 230, 0.5).withOpacity(0.5),
-        //     blurRadius: 10,
-        //     offset: Offset(0, 8), // changes position of shadow
-        //   ),
-        // ],
       ),
 
       child: Column(

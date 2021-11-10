@@ -345,10 +345,10 @@ class CardDetail extends StatelessWidget {
               width: size.width,
               height: size.height * 0.52 * size.aspectRatio,
               decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("assets/icons/card bg.png"),
-                  fit: BoxFit.none,
-                ),
+                // image: DecorationImage(
+                //   image: AssetImage("assets/icons/card bg.png"),
+                //   fit: BoxFit.none,
+                // ),
                 borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(24),
                     topRight: Radius.circular(24),
@@ -356,11 +356,13 @@ class CardDetail extends StatelessWidget {
                     bottomRight: Radius.circular(24)),
                 boxShadow: [
                   BoxShadow(
-                    color: Color.fromRGBO(131, 143, 197, 0.01).withOpacity(0.1),
-                    // .withBlue(100),
-                    blurRadius: 7,
-                    offset: Offset(5, 9), // changes position of shadow
-                  ),
+                      color: Color.fromRGBO(131, 143, 197, 0.01)
+                          .withOpacity(0.1),
+                      // .withBlue(100),
+                      blurRadius: 7,
+                      offset:
+                      Offset(5,9), // changes position of shadow
+                    ),
                 ],
               ),
               child: PageView.builder(

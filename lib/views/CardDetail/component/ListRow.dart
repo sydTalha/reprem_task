@@ -21,23 +21,16 @@ class ListRow extends StatelessWidget {
       height: size.height * 3.38,
       width: size.width * 2.904,
       decoration: BoxDecoration(
+        color: Colors.white,
         image: DecorationImage(
           image: AssetImage("assets/icons/card bg.png"),
-          fit: BoxFit.none,
+          fit: BoxFit.cover,
         ),
         borderRadius: BorderRadius.only(
             topLeft: Radius.circular(24),
             topRight: Radius.circular(24),
             bottomLeft: Radius.circular(24),
             bottomRight: Radius.circular(24)),
-        // boxShadow: [
-        //   BoxShadow(
-        //     color: Color.fromRGBO(131, 143, 197, 0.01).withOpacity(0.1),
-        //     // .withBlue(100),
-        //     blurRadius: 7,
-        //     offset: Offset(5, 9), // changes position of shadow
-        //   ),
-        // ],
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,

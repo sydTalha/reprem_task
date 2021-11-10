@@ -343,7 +343,7 @@ class CardDetail extends StatelessWidget {
             right: size.width * 0.05,
             child: Container(
               width: size.width,
-              height: size.height * 0.54 * size.aspectRatio,
+              height: size.height * 0.52 * size.aspectRatio,
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage("assets/icons/card bg.png"),
@@ -376,7 +376,7 @@ class CardDetail extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: size.height * 0.08),
+            padding: EdgeInsets.only(top: size.height * 0.05),
             child: Center(
                 child: SmoothPageIndicator(
                     controller: controller, // PageController
@@ -393,7 +393,8 @@ class CardDetail extends StatelessWidget {
             bottom: size.height * 0.308,
             child: Container(
               height: size.height * 0.09,
-              width: size.width * 9,
+              width: size.width * 1,
+              margin: EdgeInsets.only(bottom: size.width * 0.04),
               decoration: BoxDecoration(
                 // color: Colors.black,
                 image: DecorationImage(
@@ -404,7 +405,7 @@ class CardDetail extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: size.height * 0.33,
+            bottom: size.height * 0.36,
             // left: 12,
             // right: 12,
             child: Container(
@@ -424,7 +425,7 @@ class CardDetail extends StatelessWidget {
                         ),
                       ]),
                       child: ButtonsTabBar(
-                        height: 60,
+                        height: 70,
                         contentPadding: EdgeInsets.all(10),
                         backgroundColor: Colors.white,
                         unselectedBackgroundColor: Colors.transparent,
@@ -491,7 +492,7 @@ class CardDetail extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: size.height * 0.215,
+            bottom: size.height * 0.243,
             left: size.height * 0.04,
             child: Container(
               width: size.height * 0.08,
@@ -509,20 +510,20 @@ class CardDetail extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: size.height * 0.19,
+            bottom: size.height * 0.2,
             left: size.width * 0.209,
             right: size.width * 0.054,
             child: Container(
               //margin: EdgeInsets.only(left: 20, right: 20),
-              height: size.height * 0.10,
+              height: size.height * 0.12,
               width: size.width,
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(25),
-                    topRight: Radius.circular(25),
-                    bottomLeft: Radius.circular(25),
-                    bottomRight: Radius.circular(25)),
+                    topLeft: Radius.circular(30),
+                    topRight: Radius.circular(30),
+                    bottomLeft: Radius.circular(30),
+                    bottomRight: Radius.circular(30)),
                 boxShadow: [
                   BoxShadow(
                     //color: Color.fromRGBO(176, 184, 218, 1).withOpacity(0.17),
@@ -561,7 +562,7 @@ class CardDetail extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: size.height * 0.085,
+            bottom: size.height * 0.095,
             left: size.height * 0.04,
             child: Container(
               width: size.height * 0.08,
@@ -581,7 +582,7 @@ class CardDetail extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: size.height * 0.09,
+            bottom: size.height * 0.101,
             left: size.width * 0.2,
             right: size.width * 0.054,
             child: Container(

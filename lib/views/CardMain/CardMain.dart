@@ -183,7 +183,7 @@ class _CardMainState extends State<CardMain> {
         children: [
           TopRowIcons(isMain: true, isTabView: true),
           Positioned(
-            top: size.height * 0.08,
+            top: size.height * 0.1,
             left: size.width * 0.04,
             right: size.width * 0.04,
             child: GestureDetector(
@@ -198,10 +198,10 @@ class _CardMainState extends State<CardMain> {
                   decoration: BoxDecoration(
 
                     borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(24),
-                        topRight: Radius.circular(24),
-                        bottomLeft: Radius.circular(24),
-                        bottomRight: Radius.circular(24)
+                        topLeft: Radius.circular(30),
+                        topRight: Radius.circular(30),
+                        bottomLeft: Radius.circular(30),
+                        bottomRight: Radius.circular(30)
                     ),
 
                   //
@@ -231,14 +231,14 @@ class _CardMainState extends State<CardMain> {
 
           Positioned(
               child: Padding(
-                padding: EdgeInsets.only(bottom: size.height * 0.15),
+                padding: EdgeInsets.only(bottom: size.height * 0.05),
                 child: Center(
                   child: SmoothPageIndicator(
                       controller: pageController, // PageController
                       count: pages.length,
                       effect: ExpandingDotsEffect(
-                        dotHeight: 9,
-                        dotWidth: 9,
+                        dotHeight: 11,
+                        dotWidth: 15,
                         expansionFactor:2.5 ,
                       ), // your preferred effect
                       onDotClicked: (index) {}),
@@ -246,7 +246,7 @@ class _CardMainState extends State<CardMain> {
               )
           ),
           Positioned(
-            left: 25,
+            left: size.width * 0.035,
             child: Padding(
               padding: EdgeInsets.only(top: size.height * 0.5),
               child: Center(
@@ -259,7 +259,7 @@ class _CardMainState extends State<CardMain> {
                       style: TextStyle(
                           color: Color.fromRGBO(112, 124, 177, 1),
                           fontWeight: FontWeight.w600,
-                          fontSize: size.height * 0.02
+                          fontSize: size.height * 0.022
                       ),
                     ),
                     Container(

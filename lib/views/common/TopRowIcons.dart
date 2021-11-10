@@ -104,14 +104,14 @@ class TopRowIcons extends StatelessWidget {
               ),
             ),
             this.isMain ? Container(
-              margin: EdgeInsets.only(left:size.width * 0.009 , top: size.width * 0.01),
+              margin: EdgeInsets.only(left:size.width * 0.01 , top: size.width * 0.01),
               child: Text( "Your E-Card",
-                style: TextStyle(color: Color.fromRGBO(77, 85, 119, 1), fontSize: size.width*0.05, fontWeight: FontWeight.w600),
+                style: TextStyle(color: Color.fromRGBO(77, 85, 119, 1), fontSize: size.width*0.042, fontWeight: FontWeight.w600),
               ),
             ) : Container(
-              margin: EdgeInsets.only(left:size.width * 0.08),
+              margin: EdgeInsets.only(left:size.width * 0.1 , top: size.width * 0.01),
               child: Text( "Card Details" ,
-                style: TextStyle(color: Color.fromRGBO(77, 85, 119, 1), fontSize: size.width*0.05, fontWeight: FontWeight.w600),
+                style: TextStyle(color: Color.fromRGBO(77, 85, 119, 1), fontSize: size.width*0.042, fontWeight: FontWeight.w600),
               ),
             ),
             Container(
@@ -125,7 +125,7 @@ class TopRowIcons extends StatelessWidget {
                   : Row(
                 children: [
                    Container(
-                      margin: EdgeInsets.only(right: size.width * 0.01),
+                      margin: EdgeInsets.only(right: size.width * 0.03),
                       child: Image.asset(
                         'assets/icons/share.png',
                         width: size.width * 0.055,

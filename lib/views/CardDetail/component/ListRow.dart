@@ -18,6 +18,7 @@ class ListRow extends StatelessWidget {
 
   Container mobileView(Size size) {
     return Container(
+      margin: EdgeInsets.symmetric(horizontal: size.width * 0.03),
       height: size.height * 3.38,
       width: size.width * 2.904,
       decoration: BoxDecoration(
@@ -36,7 +37,7 @@ class ListRow extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Container(
-            width: size.height * 0.12,
+            width: size.height * 0.13,
             height: size.height * 0.13,
             //margin: EdgeInsets.only(top: 12),
             child: Stack(
@@ -142,12 +143,12 @@ class ListRow extends StatelessWidget {
   }
 
   Container tabletView(Size size) {
-    print('tabview');
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: size.width * 0.05),
+      margin: EdgeInsets.symmetric(horizontal: size.width * 0.02),
       // height: size.height * 3.3,
       // width: size.width * 2.904,
       decoration: BoxDecoration(
+        color: Colors.white,
         image: DecorationImage(
           image: AssetImage("assets/icons/card bg.png"),
           fit: BoxFit.cover,

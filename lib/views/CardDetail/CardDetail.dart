@@ -38,12 +38,12 @@ class CardDetail extends StatelessWidget {
         children: [
           TopRowIcons(isMain: false, isTabView: false),
           Positioned(
-            top: size.width * 0.2,
-            left: size.width * 0.05,
-            right: size.width * 0.05,
+            top: size.width * 0.18,
+            left: size.width * 0.03,
+            right: size.width * 0.03,
             child: Container(
               width: size.width,
-              height: size.height * 0.66 * size.aspectRatio,
+              height: size.height * 0.68 * size.aspectRatio,
               decoration: BoxDecoration(
                 // image: DecorationImage(
                 //   image: AssetImage("assets/icons/card bg.png"),

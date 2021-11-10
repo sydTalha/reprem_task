@@ -35,41 +35,41 @@ class TopRowIcons extends StatelessWidget {
               },
               child: Image.asset(
                 this.isMain ? 'assets/icons/Notification.png' : 'assets/icons/back.png',
-                width: size.width * 0.08,
-                height: size.width * 0.08,
+                width: size.width * 0.07,
+                height: size.width * 0.07,
               ),
             ),
             this.isMain ? Container(
-              margin: EdgeInsets.only(left:size.width * 0.009 , top: size.width * 0.01),
+              margin: EdgeInsets.only(left:size.width * 0.009 , top: size.width * 0.015),
               child: Text( "Your E-Card",
-                style: TextStyle(color: Color.fromRGBO(77, 85, 119, 1), fontSize: size.width*0.05, fontWeight: FontWeight.w600),
+                style: TextStyle(color: Color.fromRGBO(77, 85, 119, 1), fontSize: size.width*0.048, fontWeight: FontWeight.w600),
               ),
             ) : Container(
-              margin: EdgeInsets.only(left:size.width * 0.11),
+              margin: EdgeInsets.only(left:size.width * 0.09 , top: size.width * 0.01),
               child: Text( "Card Details" ,
-                style: TextStyle(color: Color.fromRGBO(77, 85, 119, 1), fontSize: size.width*0.05, fontWeight: FontWeight.w600),
+                style: TextStyle(color: Color.fromRGBO(77, 85, 119, 1), fontSize: size.width*0.048, fontWeight: FontWeight.w600),
               ),
             ),
             Container(
               child: this.isMain ?
               Image.asset(
                 'assets/icons/settings.png',
-                width: size.width * 0.083,
-                height: size.width * 0.083,
+                width: size.width * 0.07,
+                height: size.width * 0.07,
               )
                   : Row(
                 children: [
-                  Container(
-                      margin: EdgeInsets.only(right: size.width * 0.03),
+                   Container(
+                      margin: EdgeInsets.only(right: size.width * 0.04),
                       child: Image.asset(
                         'assets/icons/share.png',
-                        width: size.width * 0.083,
-                        height: size.width * 0.083,
+                        width: size.width * 0.07,
+                        height: size.width * 0.07,
                       )
                   ),
-                  if (!this.isMain) Text(
+                   if (!this.isMain) Text(
                     "Edit",
-                    style: TextStyle(color: Color.fromRGBO(112, 124, 177, 1), fontSize: size.width * 0.035, fontWeight: FontWeight.w700),
+                    style: TextStyle(color: Color.fromRGBO(112, 124, 177, 1), fontSize: size.width * 0.036, fontWeight: FontWeight.w700),
                   ),
                 ],
               ),

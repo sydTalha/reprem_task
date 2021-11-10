@@ -48,7 +48,7 @@ class CardPage extends StatelessWidget {
                     fontSize: size.height * 0.027
                 ),
               ),
-         SizedBox(height: size.width * 0.05),
+         SizedBox(height: size.width * 0.04),
          Text(
                 "Regional Sales Manager at Zoopla",
                 style: TextStyle(

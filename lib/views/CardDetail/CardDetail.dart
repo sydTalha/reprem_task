@@ -91,7 +91,7 @@ class CardDetail extends StatelessWidget {
           Positioned(
             bottom: size.height * 0.356,
             child: Container(
-              height: size.height * 0.10,
+              height: size.height * 0.09,
               width: size.width * 0.95,
               decoration: BoxDecoration(
                 // color: Colors.black,
@@ -103,7 +103,7 @@ class CardDetail extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: size.height * 0.38,
+            bottom: size.height * 0.365,
             left: 12,
             right: 12,
             child: Container(
@@ -115,10 +115,10 @@ class CardDetail extends StatelessWidget {
                       decoration: BoxDecoration(boxShadow: [
                         BoxShadow(
                           //color: Color.fromRGBO(176, 184, 218, 1).withOpacity(0.17),
-                          color: Color.fromRGBO(240, 240, 230, 0.5)
-                              .withOpacity(0.5),
-                          blurRadius: 10,
-                          offset: Offset(0, 8), // changes position of shadow
+                          color: Color.fromRGBO(240, 240, 230, 1)
+                              .withOpacity(0.4),
+                          blurRadius: 1,
+                          offset: Offset(0,0), // changes position of shadow
                         ),
                       ]),
                       child: ButtonsTabBar(

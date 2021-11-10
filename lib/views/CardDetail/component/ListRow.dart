@@ -9,17 +9,15 @@ class ListRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
-    if(isTabView){
+    if (isTabView) {
       return tabletView(size);
-    }
-    else{
+    } else {
       return mobileView(size);
     }
   }
 
   Container mobileView(Size size) {
     return Container(
-
       height: size.height * 3.38,
       width: size.width * 2.904,
       decoration: BoxDecoration(
@@ -32,16 +30,15 @@ class ListRow extends StatelessWidget {
             topRight: Radius.circular(24),
             bottomLeft: Radius.circular(24),
             bottomRight: Radius.circular(24)),
-        boxShadow: [
-          BoxShadow(
-            //color: Color.fromRGBO(176, 184, 218, 1).withOpacity(0.17),
-            color: Color.fromRGBO(240, 240, 230, 0.5).withOpacity(0.5),
-            blurRadius: 10,
-            offset: Offset(0, 8), // changes position of shadow
-          ),
-        ],
+        // boxShadow: [
+        //   BoxShadow(
+        //     color: Color.fromRGBO(131, 143, 197, 0.01).withOpacity(0.1),
+        //     // .withBlue(100),
+        //     blurRadius: 7,
+        //     offset: Offset(5, 9), // changes position of shadow
+        //   ),
+        // ],
       ),
-
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
@@ -56,13 +53,18 @@ class ListRow extends StatelessWidget {
                     child: Container(
                       margin: EdgeInsets.only(top: size.width * 0.02),
                       child: ClipRRect(
-                        borderRadius: BorderRadius.circular((size.height * 0.1)/2),
-                        child: Image.asset('assets/icons/user.png', width: size.height * 0.1, height: size.height * 0.1, fit: BoxFit.cover,),
+                        borderRadius:
+                            BorderRadius.circular((size.height * 0.1) / 2),
+                        child: Image.asset(
+                          'assets/icons/user.png',
+                          width: size.height * 0.1,
+                          height: size.height * 0.1,
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                   ),
                 ),
-
                 Positioned(
                   bottom: 1,
                   right: -0.5,
@@ -75,17 +77,14 @@ class ListRow extends StatelessWidget {
               ],
             ),
           ),
-
           Spacer(),
-
           Container(
             child: Text(
               "John Castle",
               style: TextStyle(
                   color: Color.fromRGBO(77, 85, 119, 1),
                   fontWeight: FontWeight.w600,
-                  fontSize: size.height * 0.026
-              ),
+                  fontSize: size.height * 0.026),
             ),
           ),
           Spacer(),
@@ -94,8 +93,7 @@ class ListRow extends StatelessWidget {
             style: TextStyle(
                 color: Color.fromRGBO(138, 142, 163, 1),
                 fontWeight: FontWeight.w400,
-                fontSize: size.height * 0.020
-            ),
+                fontSize: size.height * 0.020),
           ),
           Spacer(),
           Container(
@@ -108,54 +106,43 @@ class ListRow extends StatelessWidget {
                   height: size.height * 0.11,
                   decoration: BoxDecoration(
                       image: DecorationImage(
-                          image: AssetImage(
-                              'assets/icons/socialbg.png'
-                          )
-                      )
-                  ),
+                          image: AssetImage('assets/icons/socialbg.png'))),
                   child: Center(
-                      child: Image.asset('assets/icons/linkedin.png',
-                        width: size.height * 0.035,
-                        height: size.height * 0.035,)
-                  ),
+                      child: Image.asset(
+                    'assets/icons/linkedin.png',
+                    width: size.height * 0.035,
+                    height: size.height * 0.035,
+                  )),
                 ),
                 Container(
                   width: size.height * 0.11,
                   height: size.height * 0.11,
                   decoration: BoxDecoration(
                       image: DecorationImage(
-                          image: AssetImage(
-                              'assets/icons/socialbg.png'
-                          )
-                      )
-                  ),
+                          image: AssetImage('assets/icons/socialbg.png'))),
                   child: Center(
-                      child: Image.asset('assets/icons/twitter.png',
-                        width: size.height * 0.035,
-                        height: size.height * 0.035,)
-                  ),
+                      child: Image.asset(
+                    'assets/icons/twitter.png',
+                    width: size.height * 0.035,
+                    height: size.height * 0.035,
+                  )),
                 ),
                 Container(
                   width: size.height * 0.11,
                   height: size.height * 0.11,
                   decoration: BoxDecoration(
                       image: DecorationImage(
-                          image: AssetImage(
-                              'assets/icons/socialbg.png'
-                          )
-                      )
-                  ),
+                          image: AssetImage('assets/icons/socialbg.png'))),
                   child: Center(
-                      child: Image.asset('assets/icons/instagram_24x24.png',
-                        width: size.height * 0.035,
-                        height: size.height * 0.035,)
-                  ),
+                      child: Image.asset(
+                    'assets/icons/instagram_24x24.png',
+                    width: size.height * 0.035,
+                    height: size.height * 0.035,
+                  )),
                 ),
               ],
             ),
           )
-
-
         ],
       ),
     );
@@ -165,9 +152,8 @@ class ListRow extends StatelessWidget {
     print('tabview');
     return Container(
       margin: EdgeInsets.symmetric(horizontal: size.width * 0.03),
-
-      height: size.height * 3.38,
-      width: size.width * 2.904,
+      // height: size.height * 3.3,
+      // width: size.width * 2.904,
       decoration: BoxDecoration(
         image: DecorationImage(
           image: AssetImage("assets/icons/card bg.png"),
@@ -178,13 +164,13 @@ class ListRow extends StatelessWidget {
             topRight: Radius.circular(24),
             bottomLeft: Radius.circular(24),
             bottomRight: Radius.circular(24)),
-        boxShadow: [
-          BoxShadow(
-            color: Color.fromRGBO(240, 240, 230, 0.5).withOpacity(0.5),
-            blurRadius: 10,
-            offset: Offset(0, 8), // changes position of shadow
-          ),
-        ],
+        // boxShadow: [
+        //   BoxShadow(
+        //     color: Color.fromRGBO(240, 240, 230, 0.5).withOpacity(0.5),
+        //     blurRadius: 10,
+        //     offset: Offset(0, 8), // changes position of shadow
+        //   ),
+        // ],
       ),
 
       child: Column(
@@ -200,13 +186,18 @@ class ListRow extends StatelessWidget {
                   child: Center(
                     child: Container(
                       child: ClipRRect(
-                        borderRadius: BorderRadius.circular((size.height * 0.1)/2),
-                        child: Image.asset('assets/icons/user.png', width: size.height * 0.1, height: size.height * 0.1, fit: BoxFit.cover,),
+                        borderRadius:
+                            BorderRadius.circular((size.height * 0.1) / 2),
+                        child: Image.asset(
+                          'assets/icons/user.png',
+                          width: size.height * 0.1,
+                          height: size.height * 0.1,
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                   ),
                 ),
-
                 Positioned(
                   bottom: 1,
                   right: -1,
@@ -225,8 +216,7 @@ class ListRow extends StatelessWidget {
             style: TextStyle(
                 color: Color.fromRGBO(77, 85, 119, 1),
                 fontWeight: FontWeight.w600,
-                fontSize: size.height * 0.027
-            ),
+                fontSize: size.height * 0.027),
           ),
           Spacer(),
           Text(
@@ -234,8 +224,7 @@ class ListRow extends StatelessWidget {
             style: TextStyle(
                 color: Color.fromRGBO(138, 142, 163, 1),
                 fontWeight: FontWeight.w400,
-                fontSize: size.height * 0.024
-            ),
+                fontSize: size.height * 0.024),
           ),
           Spacer(),
           Container(
@@ -247,56 +236,44 @@ class ListRow extends StatelessWidget {
                   width: size.height * 0.12,
                   height: size.height * 0.12,
                   decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage(
-                        'assets/icons/socialbg.png'
-                      )
-                    )
-                  ),
+                      image: DecorationImage(
+                          image: AssetImage('assets/icons/socialbg.png'))),
                   child: Center(
-                      child: Image.asset('assets/icons/linkedin.png',
-                        width: size.height * 0.035,
-                        height: size.height * 0.035,)
-                  ),
+                      child: Image.asset(
+                    'assets/icons/linkedin.png',
+                    width: size.height * 0.035,
+                    height: size.height * 0.035,
+                  )),
                 ),
                 Container(
                   width: size.height * 0.12,
                   height: size.height * 0.12,
                   decoration: BoxDecoration(
                       image: DecorationImage(
-                          image: AssetImage(
-                              'assets/icons/socialbg.png'
-                          )
-                      )
-                  ),
+                          image: AssetImage('assets/icons/socialbg.png'))),
                   child: Center(
-                      child: Image.asset('assets/icons/twitter.png',
-                        width: size.height * 0.035,
-                        height: size.height * 0.035,)
-                  ),
+                      child: Image.asset(
+                    'assets/icons/twitter.png',
+                    width: size.height * 0.035,
+                    height: size.height * 0.035,
+                  )),
                 ),
                 Container(
                   width: size.height * 0.12,
                   height: size.height * 0.12,
                   decoration: BoxDecoration(
                       image: DecorationImage(
-                          image: AssetImage(
-                              'assets/icons/socialbg.png'
-                          )
-                      )
-                  ),
+                          image: AssetImage('assets/icons/socialbg.png'))),
                   child: Center(
-                      child: Image.asset('assets/icons/instagram_24x24.png',
-                        width: size.height * 0.035,
-                        height: size.height * 0.035,)
-                  ),
+                      child: Image.asset(
+                    'assets/icons/instagram_24x24.png',
+                    width: size.height * 0.035,
+                    height: size.height * 0.035,
+                  )),
                 ),
-
               ],
             ),
-          )
-
-
+          ),
         ],
       ),
 
@@ -446,5 +423,4 @@ class ListRow extends StatelessWidget {
       // ),
     );
   }
-
 }

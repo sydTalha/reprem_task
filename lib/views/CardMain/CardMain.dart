@@ -52,7 +52,7 @@ class _CardMainState extends State<CardMain> {
       child: Stack(
         alignment: Alignment.center,
         children: [
-          TopRowIcons(isMain: true),
+          TopRowIcons(isMain: true, isTabView: false),
           Positioned(
             top: size.height * 0.08,
             left: size.width * 0.02,
@@ -177,16 +177,15 @@ class _CardMainState extends State<CardMain> {
   }
 
   Container tabletView(Size size){
-    print('tab view');
     return Container(
       child: Stack(
         alignment: Alignment.center,
         children: [
-          TopRowIcons(isMain: true),
+          TopRowIcons(isMain: true, isTabView: true),
           Positioned(
             top: size.height * 0.08,
-            left: size.width * 0.02,
-            right: size.width * 0.02,
+            left: size.width * 0.04,
+            right: size.width * 0.04,
             child: GestureDetector(
                 onTap: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context) => CardDetail(),));

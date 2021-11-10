@@ -36,7 +36,7 @@ class CardDetail extends StatelessWidget {
       child: Stack(
         alignment: Alignment.center,
         children: [
-          TopRowIcons(isMain: false),
+          TopRowIcons(isMain: false, isTabView: false),
           Positioned(
             top: size.width * 0.2,
             left: size.width * 0.02,
@@ -334,11 +334,11 @@ class CardDetail extends StatelessWidget {
       child: Stack(
         alignment: Alignment.center,
         children: [
-          TopRowIcons(isMain: false),
+          TopRowIcons(isMain: false,isTabView: true),
           Positioned(
-            top: size.width * 0.16,
-            left: size.width * 0.02,
-            right: size.width * 0.02,
+            top: size.width * 0.14,
+            left: size.width * 0.05,
+            right: size.width * 0.05,
             child: Container(
               width: size.width,
               height: size.height * 0.54 * size.aspectRatio,
@@ -374,7 +374,7 @@ class CardDetail extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: size.height * 0.12),
+            padding: EdgeInsets.only(top: size.height * 0.08),
             child: Center(
                 child: SmoothPageIndicator(
                     controller: controller, // PageController
@@ -390,8 +390,8 @@ class CardDetail extends StatelessWidget {
           Positioned(
             bottom: size.height * 0.308,
             child: Container(
-              height: size.height * 0.094,
-              width: size.width * 0.95,
+              height: size.height * 0.09,
+              width: size.width * 9,
               decoration: BoxDecoration(
                 // color: Colors.black,
                 image: DecorationImage(
@@ -517,10 +517,10 @@ class CardDetail extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(20),
-                    topRight: Radius.circular(20),
-                    bottomLeft: Radius.circular(20),
-                    bottomRight: Radius.circular(20)),
+                    topLeft: Radius.circular(25),
+                    topRight: Radius.circular(25),
+                    bottomLeft: Radius.circular(25),
+                    bottomRight: Radius.circular(25)),
                 boxShadow: [
                   BoxShadow(
                     //color: Color.fromRGBO(176, 184, 218, 1).withOpacity(0.17),
@@ -588,10 +588,10 @@ class CardDetail extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(20),
-                    topRight: Radius.circular(20),
-                    bottomLeft: Radius.circular(20),
-                    bottomRight: Radius.circular(20)),
+                    topLeft: Radius.circular(35),
+                    topRight: Radius.circular(35),
+                    bottomLeft: Radius.circular(35),
+                    bottomRight: Radius.circular(35)),
                 boxShadow: [
                   BoxShadow(
                     //color: Color.fromRGBO(176, 184, 218, 1).withOpacity(0.17),

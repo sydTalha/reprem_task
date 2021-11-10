@@ -151,7 +151,7 @@ class ListRow extends StatelessWidget {
   Container tabletView(Size size) {
     print('tabview');
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: size.width * 0.03),
+      margin: EdgeInsets.symmetric(horizontal: size.width * 0.05),
       // height: size.height * 3.3,
       // width: size.width * 2.904,
       decoration: BoxDecoration(
@@ -199,12 +199,12 @@ class ListRow extends StatelessWidget {
                   ),
                 ),
                 Positioned(
-                  bottom: 1,
-                  right: -1,
+                  top: size.width * 0.075,
+                  right: size.width * 0.008,
                   child: Container(
-                    width: size.height * 0.045,
-                    height: size.height * 0.045,
-                    child: Image.asset('assets/icons/cardiconbg.png'),
+                    width: size.height * 0.046,
+                    height: size.height * 0.046,
+                    child: Image.asset('assets/icons/circle_zoopla.png'),
                   ),
                 )
               ],
@@ -276,151 +276,6 @@ class ListRow extends StatelessWidget {
           ),
         ],
       ),
-
-      // child: Stack(
-      //   alignment: Alignment.center,
-      //
-      //   children: [
-      //     Positioned(
-      //
-      //       child: ClipRRect(
-      //         borderRadius: BorderRadius.circular((size.height * 0.1)/2),
-      //         child: Image.asset('assets/icons/user.png', width: size.height * 0.1, height: size.height * 0.1, fit: BoxFit.cover,),
-      //       ),
-      //     ),
-      //     Positioned(
-      //       top: size.height * 0.149,
-      //       left: size.width * 1.07,
-      //       child: Container(
-      //         height: size.height * 0.09,
-      //         width: size.width * 0.2,
-      //         decoration: BoxDecoration(
-      //           image: DecorationImage(
-      //             image: AssetImage("assets/icons/cardiconbg.png"),
-      //             fit: BoxFit.fill,
-      //           ),
-      //           // borderRadius: BorderRadius.only(
-      //           //     topLeft: Radius.circular(24),
-      //           //     topRight: Radius.circular(24),
-      //           //     bottomLeft: Radius.circular(24),
-      //           //     bottomRight: Radius.circular(24)),
-      //           // boxShadow: [
-      //           //   BoxShadow(
-      //           //     //color: Color.fromRGBO(176, 184, 218, 1).withOpacity(0.17),
-      //           //     color: Colors.white.withOpacity(1),
-      //           //     spreadRadius: 4,
-      //           //     blurRadius: 0,
-      //           //     offset: Offset(-1, 0), // changes position of shadow
-      //           //   ),
-      //           // ],
-      //         ),
-      //       ),
-      //     ),
-      //     Positioned(
-      //       top: size.height * 0.26,
-      //       left: size.width * 0.73,
-      //       child: Text(
-      //         "John Castle",
-      //         style: TextStyle(
-      //             color: Color.fromRGBO(77, 85, 119, 1),
-      //             fontSize: size.width * 0.1,
-      //             fontWeight: FontWeight.w600),
-      //       ),
-      //     ),
-      //     Positioned(
-      //       top: size.height * 0.337,
-      //       left: size.width * 0.4,
-      //       child: Text(
-      //         "Regional Sales Manager at Zoopla",
-      //         style: TextStyle(
-      //             color: Color.fromRGBO(77, 85, 119, 0.5),
-      //             fontSize: size.width * 0.08,
-      //             fontWeight: FontWeight.w600),
-      //       ),
-      //     ),
-      //     Positioned(
-      //       top: size.height * 0.38,
-      //       left: size.width * 0.6,
-      //       child: Container(
-      //         height: size.height * 0.11,
-      //         width: size.width * 0.23,
-      //         decoration: BoxDecoration(
-      //           image: DecorationImage(
-      //             image: AssetImage("assets/icons/cardiconbg.png"),
-      //             fit: BoxFit.fill,
-      //           ),
-      //         ),
-      //       ),
-      //     ),
-      //     Positioned(
-      //       top: size.height * 0.413,
-      //       left: size.width * 0.66,
-      //       child: Container(
-      //         width: size.width * 0.11,
-      //         height: size.width * 0.11,
-      //         decoration: BoxDecoration(
-      //           image: DecorationImage(
-      //               fit: BoxFit.fill,
-      //               image: AssetImage('assets/icons/linkedin.png')),
-      //         ),
-      //       ),
-      //     ),
-      //     Positioned(
-      //       top: size.height * 0.38,
-      //       left: size.width * 0.9,
-      //       child: Container(
-      //         height: size.height * 0.11,
-      //         width: size.width * 0.23,
-      //         decoration: BoxDecoration(
-      //           image: DecorationImage(
-      //             image: AssetImage("assets/icons/cardiconbg.png"),
-      //             fit: BoxFit.fill,
-      //           ),
-      //         ),
-      //       ),
-      //     ),
-      //     Positioned(
-      //       top: size.height * 0.413,
-      //       left: size.width * 0.96,
-      //       child: Container(
-      //         width: size.width * 0.12,
-      //         height: size.width * 0.12,
-      //         decoration: BoxDecoration(
-      //           image: DecorationImage(
-      //               fit: BoxFit.fill,
-      //               image: AssetImage('assets/icons/twitter.png')),
-      //         ),
-      //       ),
-      //     ),
-      //     Positioned(
-      //       top: size.height * 0.38,
-      //       left: size.width * 1.2,
-      //       child: Container(
-      //         height: size.height * 0.11,
-      //         width: size.width * 0.23,
-      //         decoration: BoxDecoration(
-      //           image: DecorationImage(
-      //             image: AssetImage("assets/icons/cardiconbg.png"),
-      //             fit: BoxFit.fill,
-      //           ),
-      //         ),
-      //       ),
-      //     ),
-      //     Positioned(
-      //       top: size.height * 0.413,
-      //       left: size.width * 1.27,
-      //       child: Container(
-      //         width: size.width * 0.12,
-      //         height: size.width * 0.12,
-      //         decoration: BoxDecoration(
-      //           image: DecorationImage(
-      //               fit: BoxFit.fill,
-      //               image: AssetImage('assets/icons/instagram_24x24.png')),
-      //         ),
-      //       ),
-      //     ),
-      //   ],
-      // ),
     );
   }
 }

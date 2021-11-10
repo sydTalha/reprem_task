@@ -119,8 +119,8 @@ class TopRowIcons extends StatelessWidget {
               child: this.isMain ?
               Image.asset(
                 'assets/icons/settings.png',
-                width: size.width * 0.065,
-                height: size.width * 0.065,
+                width: size.width * 0.06,
+                height: size.width * 0.06,
               )
                   : Row(
                 children: [

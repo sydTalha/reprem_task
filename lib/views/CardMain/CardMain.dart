@@ -62,7 +62,7 @@ class _CardMainState extends State<CardMain> {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => CardDetail(),));
               },
               child: Container(
-                height: size.height * 0.45 * size.aspectRatio,
+                height: size.height * 0.7 * size.aspectRatio,
                 width: size.width,
                 //margin: EdgeInsets.only(left: size.width * 0.02, right: size.width * 0.02),
                 decoration: BoxDecoration(
@@ -99,14 +99,14 @@ class _CardMainState extends State<CardMain> {
 
           Positioned(
               child: Padding(
-                padding: EdgeInsets.only(bottom: size.height * 0.2),
+                padding: EdgeInsets.only(bottom: size.height * 0.0),
                 child: Center(
                   child: SmoothPageIndicator(
                       controller: pageController, // PageController
                       count: pages.length,
                       effect: ExpandingDotsEffect(
-                        dotHeight: 6,
-                        dotWidth: 6,
+                        dotHeight: 7,
+                        dotWidth: 8,
                         expansionFactor:2.5 ,
                       ), // your preferred effect
                       onDotClicked: (index) {}),
@@ -117,7 +117,7 @@ class _CardMainState extends State<CardMain> {
             left: 15,
             right: 15,
             child: Padding(
-              padding: EdgeInsets.only(top: size.height * 0.3),
+              padding: EdgeInsets.only(top: size.height * 0.55),
               child: Center(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -132,8 +132,8 @@ class _CardMainState extends State<CardMain> {
                       ),
                     ),
                     Container(
-                      width: size.width,
-                      height: 330 * size.aspectRatio,
+                      width: size.width ,
+                      height: 0.6 * size.width,
 
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.only(

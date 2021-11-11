@@ -108,6 +108,7 @@ class _CardMainState extends State<CardMain> {
                         dotHeight: 7,
                         dotWidth: 8,
                         expansionFactor:2.5 ,
+                        activeDotColor: Color.fromRGBO(113, 119, 181, 1),
                       ), // your preferred effect
                       onDotClicked: (index) {}),
                 ),
@@ -133,7 +134,7 @@ class _CardMainState extends State<CardMain> {
                     ),
                     Container(
                       width: size.width ,
-                      height: 0.6 * size.width,
+                      height: 0.55 * size.width,
 
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.only(
@@ -142,16 +143,6 @@ class _CardMainState extends State<CardMain> {
                             bottomLeft: Radius.circular(24),
                             bottomRight: Radius.circular(24)
                         ),
-                        // boxShadow: [
-                        //   BoxShadow(
-                        //     color: Color.fromRGBO(131, 143, 197, 1)
-                        //         .withOpacity(0.3)
-                        //         .withBlue(150),
-                        //     blurRadius: 45,
-                        //     offset:
-                        //     Offset(0, 20), // changes position of shadow
-                        //   ),
-                        // ],
                       ),
 
                       margin: EdgeInsets.only(top: 15 * size.aspectRatio),
@@ -238,6 +229,7 @@ class _CardMainState extends State<CardMain> {
                         dotHeight: 11,
                         dotWidth: 15,
                         expansionFactor:2.5 ,
+                        activeDotColor: Color.fromRGBO(113, 119, 181, 1),
                       ), // your preferred effect
                       onDotClicked: (index) {}),
                 ),
@@ -272,16 +264,7 @@ class _CardMainState extends State<CardMain> {
                             bottomLeft: Radius.circular(24),
                             bottomRight: Radius.circular(24)
                         ),
-                        // boxShadow: [
-                        //   BoxShadow(
-                        //     color: Color.fromRGBO(131, 143, 197, 1)
-                        //         .withOpacity(0.3)
-                        //         .withBlue(150),
-                        //     blurRadius: 45,
-                        //     offset:
-                        //     Offset(0, 20), // changes position of shadow
-                        //   ),
-                        // ],
+
                       ),
 
                       margin: EdgeInsets.only(top: 15 * size.aspectRatio),
@@ -300,28 +283,6 @@ class _CardMainState extends State<CardMain> {
               ),
             ),
           ),
-          // Positioned(
-          //   left: 15,
-          //   child: Padding(
-          //     padding: EdgeInsets.only(top: size.height * 0.55),
-          //     child: Center(
-          //       child: Container(
-          //         width: size.width,
-          //         height: size.height * 0.25,
-          //         color: Colors.grey,
-          //         child: ListView.builder(
-          //           padding: EdgeInsets.all(2),
-          //           scrollDirection: Axis.horizontal,
-          //           shrinkWrap: true,
-          //           itemCount: 6,
-          //           itemBuilder: (context, index) {
-          //             return ListRow(size: size,);
-          //           },
-          //         ),
-          //       )
-          //     ),
-          //   ),
-          // )
 
         ],
       ),

@@ -74,57 +74,66 @@ class CardDetail extends StatelessWidget {
               ),
             ),
           ),
-          Padding(
-            padding: EdgeInsets.only(bottom: size.height * 0.03),
-            child: Center(
-                child: SmoothPageIndicator(
-                    controller: controller, // PageController
-                    count: pages.length,
-                    effect: ExpandingDotsEffect(
-                      activeDotColor: Color.fromRGBO(113, 119, 181, 1),
-                      dotHeight: 6,
-                      dotWidth: 6,
-                      expansionFactor: 3.5,
-                    ),
-                    onDotClicked: (index) {})),
-          ),
           Positioned(
-            bottom: size.height * 0.356,
-            child: Container(
-              height: size.height * 0.09,
-              width: size.width * 0.95,
-              decoration: BoxDecoration(
-                // color: Colors.black,
-                image: DecorationImage(
-                  image: AssetImage("assets/icons/tabbarbg.png"),
-                  fit: BoxFit.fitHeight,
-                ),
-              ),
+            top: (size.height * 0.68 * size.aspectRatio) + (size.width * 0.18),
+            child: Padding(
+              padding: EdgeInsets.only(top: size.height * 0.03),
+              child: Center(
+                  child: SmoothPageIndicator(
+                      controller: controller, // PageController
+                      count: pages.length,
+                      effect: ExpandingDotsEffect(
+                        activeDotColor: Color.fromRGBO(113, 119, 181, 1),
+                        dotHeight: 6,
+                        dotWidth: 6,
+                        expansionFactor: 3.5,
+                      ),
+                      onDotClicked: (index) {})),
             ),
           ),
+          // ),
           Positioned(
-            bottom: size.height * 0.365,
-            left: 12,
-            right: 12,
+            bottom: size.height * 0.325,
             child: Container(
+              width: size.width,
               child: DefaultTabController(
                 length: 4,
                 child: Column(
                   children: <Widget>[
                     Container(
-                      decoration: BoxDecoration(boxShadow: [
-                        BoxShadow(
-                          //color: Color.fromRGBO(176, 184, 218, 1).withOpacity(0.17),
-                          color: Color.fromRGBO(240, 240, 230, 1)
-                              .withOpacity(0.4),
-                          blurRadius: 1,
-                          offset: Offset(0,0), // changes position of shadow
-                        ),
-                      ]),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage("assets/icons/tabbarbg.png"),
+                            fit: BoxFit.fill,
+                          ),
+                          boxShadow: [
+                            BoxShadow(
+                              //color: Color.fromRGBO(176, 184, 218, 1).withOpacity(0.17),
+                              color: Color.fromRGBO(240, 240, 230, 0.5)
+                                  .withOpacity(0.1),
+                              blurRadius: 7,
+                              offset: Offset(5,9), // changes position of shadow
+                            ),
+                          ]
+                      ),
                       child: ButtonsTabBar(
-                        height: 50,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Color.fromRGBO(131, 143, 197, 0.01)
+                                  .withOpacity(0.8),
+                              // .withBlue(100),
+                              blurRadius: 35,
+                              offset:
+                              Offset(10,10), // changes position of shadow
+                            ),
+                          ],
+                        ),
+                        buttonMargin: EdgeInsets.only(left: 10, right: 10, top: 8, bottom: 8),
+                        height: 57,
                         contentPadding: EdgeInsets.all(10),
-                        backgroundColor: Color.fromRGBO(248, 250, 248, 1),
+                        //backgroundColor: Color.fromRGBO(248, 250, 248, 1),
                         unselectedBackgroundColor: Colors.transparent,
                         labelStyle: TextStyle(
                             color: Color.fromRGBO(113, 119, 181, 1),
@@ -187,7 +196,7 @@ class CardDetail extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: size.height * 0.26,
+            bottom: size.height * 0.22,
             left: size.height * 0.03,
             child: Container(
               width: size.height * 0.08,
@@ -206,7 +215,7 @@ class CardDetail extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: size.height * 0.235,
+            bottom: size.height * 0.2,
             left: size.width * 0.25,
             right: size.width * 0.054,
             child: Container(
@@ -260,7 +269,7 @@ class CardDetail extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: size.height * 0.14,
+            bottom: size.height * 0.09,
             left: size.height * 0.03,
             child: Container(
               width: size.height * 0.08,
@@ -279,7 +288,7 @@ class CardDetail extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: size.height * 0.14,
+            bottom: size.height * 0.09,
             left: size.width * 0.25,
             right: size.width * 0.054,
             child: Container(
@@ -391,45 +400,66 @@ class CardDetail extends StatelessWidget {
                     ),
                     onDotClicked: (index) {})),
           ),
-          Positioned(
-            bottom: size.height * 0.308,
-            child: Container(
-              height: size.height * 0.09,
-              width: size.width * 1.2,
-              margin: EdgeInsets.only(bottom: size.width * 0.04),
-              decoration: BoxDecoration(
-                // color: Colors.black,
-                image: DecorationImage(
-                  image: AssetImage("assets/icons/tabbarbg.png"),
-                  fit: BoxFit.fitHeight,
-                ),
-              ),
-            ),
-          ),
+          // Positioned(
+          //   bottom: size.height * 0.308,
+          //   child: Container(
+          //     height: size.height * 0.09,
+          //     width: size.width * 1.2,
+          //     margin: EdgeInsets.only(bottom: size.width * 0.04),
+          //     // decoration: BoxDecoration(
+          //     //   // color: Colors.black,
+          //     //   image: DecorationImage(
+          //     //     image: AssetImage("assets/icons/tabbarbg.png"),
+          //     //     fit: BoxFit.fitHeight,
+          //     //   ),
+          //     // ),
+          //   ),
+          // ),
           Positioned(
             bottom: size.height * 0.353,
             // left: 12,
             // right: 12,
             child: Container(
+              width: size.width,
               child: DefaultTabController(
                 length: 4,
                 child: Column(
                   children: <Widget>[
                     Container(
-                      width: size.width * 0.91,
-                      decoration: BoxDecoration(boxShadow: [
-                        BoxShadow(
-                          //color: Color.fromRGBO(176, 184, 218, 1).withOpacity(0.17),
-                          color: Color.fromRGBO(240, 240, 230, 0.5)
-                              .withOpacity(0.1),
-                          blurRadius: 7,
-                          offset: Offset(5,9), // changes position of shadow
-                        ),
-                      ]),
+                      width: size.width,
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage("assets/icons/tabbarbg.png"),
+                            fit: BoxFit.fill,
+                          ),
+                          boxShadow: [
+                            BoxShadow(
+                              //color: Color.fromRGBO(176, 184, 218, 1).withOpacity(0.17),
+                              color: Color.fromRGBO(240, 240, 230, 0.5)
+                                  .withOpacity(0.1),
+                              blurRadius: 7,
+                              offset: Offset(5,9), // changes position of shadow
+                            ),
+                          ]
+                      ),
                       child: ButtonsTabBar(
-                        height: 70,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                            boxShadow: [
+                              BoxShadow(
+                                color: Color.fromRGBO(131, 143, 197, 0.01)
+                                    .withOpacity(0.8),
+                                // .withBlue(100),
+                                blurRadius: 35,
+                                offset:
+                                Offset(10,10), // changes position of shadow
+                              ),
+                            ],
+                        ),
+                        buttonMargin: EdgeInsets.only(left: 10, right: 10, top: 8, bottom: 8),
+                        height: 80,
                         contentPadding: EdgeInsets.all(10),
-                        backgroundColor: Colors.white,
+
                         unselectedBackgroundColor: Colors.transparent,
                         labelStyle: TextStyle(
                             color: Color.fromRGBO(113, 119, 181, 1),
@@ -440,6 +470,7 @@ class CardDetail extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                             fontSize: size.width * 0.03),
                         radius: 100,
+
                         tabs: [
                           Tab(
                             text: " " +
